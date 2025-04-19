@@ -4,7 +4,7 @@
 
 1. Clone the repository and navigate to the project directory:
    ```bash
-   git clone <shopic_home_assigment>
+   git clone <shopic_assigment_1>
    cd shopic_assigment_1
    ```
 
