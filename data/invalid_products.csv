@@ -1,0 +1,4 @@
+id,name,price,category,stock
+1,Laptop,-999.99,Electronics,50
+2,,89.99,Electronics,100
+3,Mouse,abc,Electronics,200

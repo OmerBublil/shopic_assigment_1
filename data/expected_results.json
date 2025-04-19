@@ -1,0 +1,63 @@
+{
+  "valid_products": {
+    "total": 3,
+    "success_count": 3,
+    "error_count": 0
+  },
+  "invalid_products": {
+    "total": 3,
+    "success_count": 0,
+    "error_count": 3,
+    "expected_errors": [
+      "Invalid price in row 0",
+      "Missing name in row 1",
+      "Invalid price in row 2"
+    ]
+  },
+  "missing_price": {
+    "total": 3,
+    "success_count": 2,
+    "error_count": 1,
+    "expected_errors": [
+      "Missing price in row 1"
+    ]
+  },
+  "empty_file": {
+    "total": 0,
+    "success_count": 0,
+    "error_count": 0,
+    "expected_errors": [
+      "No columns to parse from file"
+    ]
+  },
+  "header_only": {
+    "total": 0,
+    "success_count": 0,
+    "error_count": 0,
+    "expected_errors": []
+  },
+  "non_numeric_price": {
+    "total": 1,
+    "success_count": 0,
+    "error_count": 1,
+    "expected_errors": [
+      "Invalid price in row 0"
+    ]
+  },
+  "negative_price": {
+    "total": 1,
+    "success_count": 0,
+    "error_count": 1,
+    "expected_errors": [
+      "Invalid price in row 1"
+    ]
+  },
+  "missing_headers": {
+    "total": 0,
+    "success_count": 0,
+    "error_count": 0,
+    "expected_errors": [
+      "'name'"
+    ]
+  }
+}

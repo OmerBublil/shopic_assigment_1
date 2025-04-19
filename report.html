@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">report.html</title>
+      <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">report.html</h1>
+    <p>Report generated on 19-Apr-2025 at 15:40:53 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">9 tests took 00:00:14.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
+            <span class="failed">4 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">5 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.12.7&#34;, &#34;Platform&#34;: &#34;macOS-15.4-arm64-arm-64bit&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;7.4.0&#34;, &#34;pluggy&#34;: &#34;1.0.0&#34;}, &#34;Plugins&#34;: {&#34;playwright&#34;: &#34;0.4.3&#34;, &#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;base-url&#34;: &#34;2.1.0&#34;, &#34;anyio&#34;: &#34;4.2.0&#34;}, &#34;Base URL&#34;: &#34;&#34;}, &#34;tests&#34;: {&#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/valid_products.csv-valid_products-success]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/valid_products.csv-valid_products-success]&#34;, &#34;duration&#34;: &#34;00:00:01&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/valid_products.csv-valid_products-success]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:01&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-04-19 15:40:40,567 - INFO - Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/valid_products.csv, expected_status: success\n2025-04-19 15:40:40,618 - INFO - Navigated to http://localhost:8000\n2025-04-19 15:40:40,650 - INFO - Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/valid_products.csv\n2025-04-19 15:40:40,700 - INFO - Submitted the form\n2025-04-19 15:40:40,736 - INFO - Loading expected results from JSON file\n2025-04-19 15:40:40,736 - INFO - Loaded expectations for key &amp;#x27;valid_products&amp;#x27;\n2025-04-19 15:40:40,736 - INFO - Actual success count: 3\n2025-04-19 15:40:40,736 - INFO - Actual error rows count: 0\n2025-04-19 15:40:40,736 - INFO - Computed total rows (successes + errors): 3\n2025-04-19 15:40:40,736 - INFO - Checking response status: expected &amp;#x27;success&amp;#x27;, got &amp;#x27;success&amp;#x27;\n2025-04-19 15:40:40,736 - INFO - Checking success count: expected 3, got 3\n2025-04-19 15:40:40,736 - INFO - Checking error count: expected 0, got 0\n2025-04-19 15:40:40,736 - INFO - Checking total records: expected 3, got 3\n2025-04-19 15:40:40,736 - INFO - Expected errors: []\n2025-04-19 15:40:40,736 - INFO - Actual errors: []\n2025-04-19 15:40:40,736 - INFO - Test passed successfully.\n\n------------------------------ Captured log call -------------------------------\nINFO     csv_upload_tester:csv_upload_tester.py:19 Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/valid_products.csv, expected_status: success\nINFO     csv_upload_tester:csv_upload_tester.py:47 Navigated to http://localhost:8000\nINFO     csv_upload_tester:csv_upload_tester.py:55 Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/valid_products.csv\nINFO     csv_upload_tester:csv_upload_tester.py:58 Submitted the form\nINFO     csv_upload_tester:csv_upload_tester.py:71 Loading expected results from JSON file\nINFO     csv_upload_tester:csv_upload_tester.py:75 Loaded expectations for key &amp;#x27;valid_products&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:95 Actual success count: 3\nINFO     csv_upload_tester:csv_upload_tester.py:115 Actual error rows count: 0\nINFO     csv_upload_tester:csv_upload_tester.py:118 Computed total rows (successes + errors): 3\nINFO     csv_upload_tester:csv_upload_tester.py:121 Checking response status: expected &amp;#x27;success&amp;#x27;, got &amp;#x27;success&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:125 Checking success count: expected 3, got 3\nINFO     csv_upload_tester:csv_upload_tester.py:129 Checking error count: expected 0, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:133 Checking total records: expected 3, got 3\nINFO     csv_upload_tester:csv_upload_tester.py:137 Expected errors: []\nINFO     csv_upload_tester:csv_upload_tester.py:138 Actual errors: []\nINFO     csv_upload_tester:csv_upload_tester.py:159 Test passed successfully.\n\n&#34;}], &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/invalid_products.csv-invalid_products-error]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/invalid_products.csv-invalid_products-error]&#34;, &#34;duration&#34;: &#34;381 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/invalid_products.csv-invalid_products-error]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;381 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;csv_file = &amp;#x27;/Users/omerbublil/Desktop/shopic_assigment_1/data/invalid_products.csv&amp;#x27;\nexpected_key = &amp;#x27;invalid_products&amp;#x27;, expected_status = &amp;#x27;error&amp;#x27;\npage = &amp;lt;Page url=&amp;#x27;http://localhost:8000/&amp;#x27;&amp;gt;\n\n    @pytest.mark.parametrize(&amp;quot;csv_file, expected_key, expected_status&amp;quot;, test_cases)\n    def test_csv_upload(csv_file, expected_key, expected_status, page):\n        &amp;quot;&amp;quot;&amp;quot;\n        Executes the CSV upload test for a given file, comparing actual results from the site\n        against the expected results defined in expected_results.json.\n        &amp;quot;&amp;quot;&amp;quot;\n        tester = csv_upload_tester(csv_file, expected_key, expected_status)\n&amp;gt;       tester.run(page)\n\ntests/test_csv_uploads.py:33: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;csv_upload_tester.csv_upload_tester object at 0x104e8bbf0&amp;gt;\npage = &amp;lt;Page url=&amp;#x27;http://localhost:8000/&amp;#x27;&amp;gt;\n\n    def run(self, page):\n        &amp;quot;&amp;quot;&amp;quot;\n        Main test logic: uploads the file, collects the result from the site,\n        compares with expected results, and raises assertion if mismatch is found.\n        &amp;quot;&amp;quot;&amp;quot;\n        upload_page = UploadPage(page)\n        upload_page.navigate(self.base_url)\n        logger.info(f&amp;quot;Navigated to {self.base_url}&amp;quot;)\n    \n        # Before attempting to upload the file\n        if not os.path.exists(self.csv_path):\n            logger.error(f&amp;quot;CSV file not found: {self.csv_path}. Aborting upload.&amp;quot;)\n            raise FileNotFoundError(f&amp;quot;CSV file not found: {self.csv_path}&amp;quot;)\n    \n        upload_page.upload_file(self.csv_path)\n        logger.info(f&amp;quot;Uploaded file: {self.csv_path}&amp;quot;)\n    \n        upload_page.submit()\n        logger.info(&amp;quot;Submitted the form&amp;quot;)\n    \n        # Get the base path of the project (root folder)\n        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\n        EXPECTED_RESULTS_PATH = os.path.join(BASE_DIR, &amp;quot;data&amp;quot;, &amp;quot;expected_results.json&amp;quot;)\n    \n        try:\n            result_json = upload_page.get_results()\n        except Exception as e:\n            logging.error(f&amp;quot;Exception while getting results: {e}&amp;quot;)\n            result_json = {&amp;quot;status&amp;quot;: &amp;quot;error&amp;quot;, &amp;quot;message&amp;quot;: f&amp;quot;Unexpected error while parsing result: {e}&amp;quot;}\n    \n        try:\n            logger.info(&amp;quot;Loading expected results from JSON file&amp;quot;)\n            with open(EXPECTED_RESULTS_PATH) as f:\n                expected_results = json.load(f)\n            expected = expected_results[self.expected_key]\n            logger.info(f&amp;quot;Loaded expectations for key &amp;#x27;{self.expected_key}&amp;#x27;&amp;quot;)\n        except FileNotFoundError:\n            logger.error(&amp;quot;Expected results file not found.&amp;quot;)\n            raise\n        except KeyError:\n            logger.error(f&amp;quot;Key &amp;#x27;{self.expected_key}&amp;#x27; not found in expected results file.&amp;quot;)\n            raise\n        except json.JSONDecodeError as e:\n            logger.error(f&amp;quot;Failed to decode JSON file: {e}&amp;quot;)\n            raise\n    \n    \n        # Extract expected values\n        total_expected = expected[&amp;quot;total&amp;quot;]\n        success_expected = expected[&amp;quot;success_count&amp;quot;]\n        error_expected = expected[&amp;quot;error_count&amp;quot;]\n        expected_errors = expected.get(&amp;quot;expected_errors&amp;quot;, [])\n    \n        # Parse actual results\n        actual_success_count = len(result_json.get(&amp;quot;data&amp;quot;, [])) if &amp;quot;data&amp;quot; in result_json else 0\n        logger.info(f&amp;quot;Actual success count: {actual_success_count}&amp;quot;)\n    \n        failures = []\n    \n        # Extract errors from response\n        actual_errors = result_json.get(&amp;quot;errors&amp;quot;)\n        if not actual_errors or not isinstance(actual_errors, list):\n            actual_errors = []\n    \n        # If no structured errors, fall back to error message string\n        if not actual_errors and &amp;quot;message&amp;quot; in result_json:\n            logger.info(&amp;quot;No &amp;#x27;errors&amp;#x27; field found, falling back to &amp;#x27;message&amp;#x27; field&amp;quot;)\n            actual_errors = [result_json[&amp;quot;message&amp;quot;]]\n    \n        # Ensure errors exist when error is expected\n        if self.expected_status == &amp;quot;error&amp;quot; and not actual_errors:\n            logger.warning(&amp;quot;Expected error status but no errors or message were returned in response&amp;quot;)\n            failures.append(&amp;quot;Expected error status but no errors or message were returned in response&amp;quot;)\n    \n        actual_error_rows_count = len(self.extract_error_rows(actual_errors))\n        logger.info(f&amp;quot;Actual error rows count: {actual_error_rows_count}&amp;quot;)\n    \n        actual_total = actual_success_count + actual_error_rows_count\n        logger.info(f&amp;quot;Computed total rows (successes + errors): {actual_total}&amp;quot;)\n    \n        # Compare actual results to expected\n        logger.info(f&amp;quot;Checking response status: expected &amp;#x27;{self.expected_status}&amp;#x27;, got &amp;#x27;{result_json[&amp;#x27;status&amp;#x27;]}&amp;#x27;&amp;quot;)\n        if result_json[&amp;quot;status&amp;quot;] != self.expected_status:\n            failures.append(f&amp;quot;Expected status &amp;#x27;{self.expected_status}&amp;#x27;, got &amp;#x27;{result_json[&amp;#x27;status&amp;#x27;]}&amp;#x27;&amp;quot;)\n    \n        logger.info(f&amp;quot;Checking success count: expected {success_expected}, got {actual_success_count}&amp;quot;)\n        if actual_success_count != success_expected:\n            failures.append(f&amp;quot;Expected {success_expected} successes, got {actual_success_count}&amp;quot;)\n    \n        logger.info(f&amp;quot;Checking error count: expected {error_expected}, got {actual_error_rows_count}&amp;quot;)\n        if actual_error_rows_count != error_expected:\n            failures.append(f&amp;quot;Expected {error_expected} errors, got {actual_error_rows_count}&amp;quot;)\n    \n        logger.info(f&amp;quot;Checking total records: expected {total_expected}, got {actual_total}&amp;quot;)\n        if actual_total != total_expected:\n            failures.append(f&amp;quot;Expected total {total_expected}, got {actual_total}&amp;quot;)\n    \n        logger.info(f&amp;quot;Expected errors: {expected_errors}&amp;quot;)\n        logger.info(f&amp;quot;Actual errors: {actual_errors}&amp;quot;)\n    \n        # Detect missing or extra errors\n        missing = [e for e in expected_errors if e not in actual_errors]\n        unexpected = [e for e in actual_errors if e not in expected_errors]\n    \n        if missing:\n            logger.warning(f&amp;quot;Missing expected errors: {missing}&amp;quot;)\n            failures.append(f&amp;quot;Missing expected errors: {missing}&amp;quot;)\n    \n        if unexpected:\n            logger.warning(f&amp;quot;Unexpected errors found: {unexpected}&amp;quot;)\n            failures.append(f&amp;quot;Unexpected errors found: {unexpected}&amp;quot;)\n    \n        # Final assertion if any failure detected\n        if failures:\n            full_message = &amp;quot;\\n&amp;quot;.join(failures)\n            separator = &amp;quot;\\n&amp;quot; + &amp;quot;=&amp;quot; * 60 + &amp;quot;\\n&amp;quot;\n            logger.error(f&amp;quot;Test failed with the following issues:\\n{full_message}&amp;quot;)\n&amp;gt;           assert False, f&amp;quot;{separator}Test failed with the following issues:\\n{full_message}{separator}&amp;quot;\nE           AssertionError: \nE           ============================================================\nE           Test failed with the following issues:\nE           Expected 3 errors, got 4\nE           Expected total 3, got 4\nE           Unexpected errors found: [&amp;#x27;Invalid price in row 1&amp;#x27;]\nE           ============================================================\n\ntests/csv_upload_tester.py:157: AssertionError\n\n----------------------------- Captured stderr call -----------------------------\n2025-04-19 15:40:41,038 - INFO - Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/invalid_products.csv, expected_status: error\n2025-04-19 15:40:41,052 - INFO - Navigated to http://localhost:8000\n2025-04-19 15:40:41,071 - INFO - Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/invalid_products.csv\n2025-04-19 15:40:41,109 - INFO - Submitted the form\n2025-04-19 15:40:41,122 - INFO - Loading expected results from JSON file\n2025-04-19 15:40:41,122 - INFO - Loaded expectations for key &amp;#x27;invalid_products&amp;#x27;\n2025-04-19 15:40:41,122 - INFO - Actual success count: 0\n2025-04-19 15:40:41,122 - INFO - Actual error rows count: 4\n2025-04-19 15:40:41,122 - INFO - Computed total rows (successes + errors): 4\n2025-04-19 15:40:41,122 - INFO - Checking response status: expected &amp;#x27;error&amp;#x27;, got &amp;#x27;error&amp;#x27;\n2025-04-19 15:40:41,122 - INFO - Checking success count: expected 0, got 0\n2025-04-19 15:40:41,122 - INFO - Checking error count: expected 3, got 4\n2025-04-19 15:40:41,122 - INFO - Checking total records: expected 3, got 4\n2025-04-19 15:40:41,122 - INFO - Expected errors: [&amp;#x27;Invalid price in row 0&amp;#x27;, &amp;#x27;Missing name in row 1&amp;#x27;, &amp;#x27;Invalid price in row 2&amp;#x27;]\n2025-04-19 15:40:41,122 - INFO - Actual errors: [&amp;#x27;Invalid price in row 0&amp;#x27;, &amp;#x27;Missing name in row 1&amp;#x27;, &amp;#x27;Invalid price in row 1&amp;#x27;, &amp;#x27;Invalid price in row 2&amp;#x27;]\n2025-04-19 15:40:41,122 - WARNING - Unexpected errors found: [&amp;#x27;Invalid price in row 1&amp;#x27;]\n2025-04-19 15:40:41,122 - ERROR - Test failed with the following issues:\nExpected 3 errors, got 4\nExpected total 3, got 4\nUnexpected errors found: [&amp;#x27;Invalid price in row 1&amp;#x27;]\n\n------------------------------ Captured log call -------------------------------\nINFO     csv_upload_tester:csv_upload_tester.py:19 Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/invalid_products.csv, expected_status: error\nINFO     csv_upload_tester:csv_upload_tester.py:47 Navigated to http://localhost:8000\nINFO     csv_upload_tester:csv_upload_tester.py:55 Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/invalid_products.csv\nINFO     csv_upload_tester:csv_upload_tester.py:58 Submitted the form\nINFO     csv_upload_tester:csv_upload_tester.py:71 Loading expected results from JSON file\nINFO     csv_upload_tester:csv_upload_tester.py:75 Loaded expectations for key &amp;#x27;invalid_products&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:95 Actual success count: 0\nINFO     csv_upload_tester:csv_upload_tester.py:115 Actual error rows count: 4\nINFO     csv_upload_tester:csv_upload_tester.py:118 Computed total rows (successes + errors): 4\nINFO     csv_upload_tester:csv_upload_tester.py:121 Checking response status: expected &amp;#x27;error&amp;#x27;, got &amp;#x27;error&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:125 Checking success count: expected 0, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:129 Checking error count: expected 3, got 4\nINFO     csv_upload_tester:csv_upload_tester.py:133 Checking total records: expected 3, got 4\nINFO     csv_upload_tester:csv_upload_tester.py:137 Expected errors: [&amp;#x27;Invalid price in row 0&amp;#x27;, &amp;#x27;Missing name in row 1&amp;#x27;, &amp;#x27;Invalid price in row 2&amp;#x27;]\nINFO     csv_upload_tester:csv_upload_tester.py:138 Actual errors: [&amp;#x27;Invalid price in row 0&amp;#x27;, &amp;#x27;Missing name in row 1&amp;#x27;, &amp;#x27;Invalid price in row 1&amp;#x27;, &amp;#x27;Invalid price in row 2&amp;#x27;]\nWARNING  csv_upload_tester:csv_upload_tester.py:149 Unexpected errors found: [&amp;#x27;Invalid price in row 1&amp;#x27;]\nERROR    csv_upload_tester:csv_upload_tester.py:156 Test failed with the following issues:\nExpected 3 errors, got 4\nExpected total 3, got 4\nUnexpected errors found: [&amp;#x27;Invalid price in row 1&amp;#x27;]\n\n&#34;}], &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/missing_price.csv-missing_price-error]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/missing_price.csv-missing_price-error]&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/missing_price.csv-missing_price-error]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;csv_file = &amp;#x27;/Users/omerbublil/Desktop/shopic_assigment_1/data/missing_price.csv&amp;#x27;\nexpected_key = &amp;#x27;missing_price&amp;#x27;, expected_status = &amp;#x27;error&amp;#x27;\npage = &amp;lt;Page url=&amp;#x27;http://localhost:8000/&amp;#x27;&amp;gt;\n\n    @pytest.mark.parametrize(&amp;quot;csv_file, expected_key, expected_status&amp;quot;, test_cases)\n    def test_csv_upload(csv_file, expected_key, expected_status, page):\n        &amp;quot;&amp;quot;&amp;quot;\n        Executes the CSV upload test for a given file, comparing actual results from the site\n        against the expected results defined in expected_results.json.\n        &amp;quot;&amp;quot;&amp;quot;\n        tester = csv_upload_tester(csv_file, expected_key, expected_status)\n&amp;gt;       tester.run(page)\n\ntests/test_csv_uploads.py:33: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;csv_upload_tester.csv_upload_tester object at 0x104b8cbf0&amp;gt;\npage = &amp;lt;Page url=&amp;#x27;http://localhost:8000/&amp;#x27;&amp;gt;\n\n    def run(self, page):\n        &amp;quot;&amp;quot;&amp;quot;\n        Main test logic: uploads the file, collects the result from the site,\n        compares with expected results, and raises assertion if mismatch is found.\n        &amp;quot;&amp;quot;&amp;quot;\n        upload_page = UploadPage(page)\n        upload_page.navigate(self.base_url)\n        logger.info(f&amp;quot;Navigated to {self.base_url}&amp;quot;)\n    \n        # Before attempting to upload the file\n        if not os.path.exists(self.csv_path):\n            logger.error(f&amp;quot;CSV file not found: {self.csv_path}. Aborting upload.&amp;quot;)\n            raise FileNotFoundError(f&amp;quot;CSV file not found: {self.csv_path}&amp;quot;)\n    \n        upload_page.upload_file(self.csv_path)\n        logger.info(f&amp;quot;Uploaded file: {self.csv_path}&amp;quot;)\n    \n        upload_page.submit()\n        logger.info(&amp;quot;Submitted the form&amp;quot;)\n    \n        # Get the base path of the project (root folder)\n        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\n        EXPECTED_RESULTS_PATH = os.path.join(BASE_DIR, &amp;quot;data&amp;quot;, &amp;quot;expected_results.json&amp;quot;)\n    \n        try:\n            result_json = upload_page.get_results()\n        except Exception as e:\n            logging.error(f&amp;quot;Exception while getting results: {e}&amp;quot;)\n            result_json = {&amp;quot;status&amp;quot;: &amp;quot;error&amp;quot;, &amp;quot;message&amp;quot;: f&amp;quot;Unexpected error while parsing result: {e}&amp;quot;}\n    \n        try:\n            logger.info(&amp;quot;Loading expected results from JSON file&amp;quot;)\n            with open(EXPECTED_RESULTS_PATH) as f:\n                expected_results = json.load(f)\n            expected = expected_results[self.expected_key]\n            logger.info(f&amp;quot;Loaded expectations for key &amp;#x27;{self.expected_key}&amp;#x27;&amp;quot;)\n        except FileNotFoundError:\n            logger.error(&amp;quot;Expected results file not found.&amp;quot;)\n            raise\n        except KeyError:\n            logger.error(f&amp;quot;Key &amp;#x27;{self.expected_key}&amp;#x27; not found in expected results file.&amp;quot;)\n            raise\n        except json.JSONDecodeError as e:\n            logger.error(f&amp;quot;Failed to decode JSON file: {e}&amp;quot;)\n            raise\n    \n    \n        # Extract expected values\n        total_expected = expected[&amp;quot;total&amp;quot;]\n        success_expected = expected[&amp;quot;success_count&amp;quot;]\n        error_expected = expected[&amp;quot;error_count&amp;quot;]\n        expected_errors = expected.get(&amp;quot;expected_errors&amp;quot;, [])\n    \n        # Parse actual results\n        actual_success_count = len(result_json.get(&amp;quot;data&amp;quot;, [])) if &amp;quot;data&amp;quot; in result_json else 0\n        logger.info(f&amp;quot;Actual success count: {actual_success_count}&amp;quot;)\n    \n        failures = []\n    \n        # Extract errors from response\n        actual_errors = result_json.get(&amp;quot;errors&amp;quot;)\n        if not actual_errors or not isinstance(actual_errors, list):\n            actual_errors = []\n    \n        # If no structured errors, fall back to error message string\n        if not actual_errors and &amp;quot;message&amp;quot; in result_json:\n            logger.info(&amp;quot;No &amp;#x27;errors&amp;#x27; field found, falling back to &amp;#x27;message&amp;#x27; field&amp;quot;)\n            actual_errors = [result_json[&amp;quot;message&amp;quot;]]\n    \n        # Ensure errors exist when error is expected\n        if self.expected_status == &amp;quot;error&amp;quot; and not actual_errors:\n            logger.warning(&amp;quot;Expected error status but no errors or message were returned in response&amp;quot;)\n            failures.append(&amp;quot;Expected error status but no errors or message were returned in response&amp;quot;)\n    \n        actual_error_rows_count = len(self.extract_error_rows(actual_errors))\n        logger.info(f&amp;quot;Actual error rows count: {actual_error_rows_count}&amp;quot;)\n    \n        actual_total = actual_success_count + actual_error_rows_count\n        logger.info(f&amp;quot;Computed total rows (successes + errors): {actual_total}&amp;quot;)\n    \n        # Compare actual results to expected\n        logger.info(f&amp;quot;Checking response status: expected &amp;#x27;{self.expected_status}&amp;#x27;, got &amp;#x27;{result_json[&amp;#x27;status&amp;#x27;]}&amp;#x27;&amp;quot;)\n        if result_json[&amp;quot;status&amp;quot;] != self.expected_status:\n            failures.append(f&amp;quot;Expected status &amp;#x27;{self.expected_status}&amp;#x27;, got &amp;#x27;{result_json[&amp;#x27;status&amp;#x27;]}&amp;#x27;&amp;quot;)\n    \n        logger.info(f&amp;quot;Checking success count: expected {success_expected}, got {actual_success_count}&amp;quot;)\n        if actual_success_count != success_expected:\n            failures.append(f&amp;quot;Expected {success_expected} successes, got {actual_success_count}&amp;quot;)\n    \n        logger.info(f&amp;quot;Checking error count: expected {error_expected}, got {actual_error_rows_count}&amp;quot;)\n        if actual_error_rows_count != error_expected:\n            failures.append(f&amp;quot;Expected {error_expected} errors, got {actual_error_rows_count}&amp;quot;)\n    \n        logger.info(f&amp;quot;Checking total records: expected {total_expected}, got {actual_total}&amp;quot;)\n        if actual_total != total_expected:\n            failures.append(f&amp;quot;Expected total {total_expected}, got {actual_total}&amp;quot;)\n    \n        logger.info(f&amp;quot;Expected errors: {expected_errors}&amp;quot;)\n        logger.info(f&amp;quot;Actual errors: {actual_errors}&amp;quot;)\n    \n        # Detect missing or extra errors\n        missing = [e for e in expected_errors if e not in actual_errors]\n        unexpected = [e for e in actual_errors if e not in expected_errors]\n    \n        if missing:\n            logger.warning(f&amp;quot;Missing expected errors: {missing}&amp;quot;)\n            failures.append(f&amp;quot;Missing expected errors: {missing}&amp;quot;)\n    \n        if unexpected:\n            logger.warning(f&amp;quot;Unexpected errors found: {unexpected}&amp;quot;)\n            failures.append(f&amp;quot;Unexpected errors found: {unexpected}&amp;quot;)\n    \n        # Final assertion if any failure detected\n        if failures:\n            full_message = &amp;quot;\\n&amp;quot;.join(failures)\n            separator = &amp;quot;\\n&amp;quot; + &amp;quot;=&amp;quot; * 60 + &amp;quot;\\n&amp;quot;\n            logger.error(f&amp;quot;Test failed with the following issues:\\n{full_message}&amp;quot;)\n&amp;gt;           assert False, f&amp;quot;{separator}Test failed with the following issues:\\n{full_message}{separator}&amp;quot;\nE           AssertionError: \nE           ============================================================\nE           Test failed with the following issues:\nE           Expected 2 successes, got 0\nE           Expected 1 errors, got 0\nE           Expected total 3, got 0\nE           Missing expected errors: [&amp;#x27;Missing price in row 1&amp;#x27;]\nE           Unexpected errors found: [&amp;#x27;Unexpected error while parsing result: Timeout 10000ms exceeded.&amp;#x27;]\nE           ============================================================\n\ntests/csv_upload_tester.py:157: AssertionError\n\n----------------------------- Captured stderr call -----------------------------\n2025-04-19 15:40:41,436 - INFO - Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/missing_price.csv, expected_status: error\n2025-04-19 15:40:41,449 - INFO - Navigated to http://localhost:8000\n2025-04-19 15:40:41,468 - INFO - Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/missing_price.csv\n2025-04-19 15:40:41,508 - INFO - Submitted the form\n2025-04-19 15:40:51,518 - ERROR - Exception while getting results: Timeout 10000ms exceeded.\n2025-04-19 15:40:51,518 - INFO - Loading expected results from JSON file\n2025-04-19 15:40:51,519 - INFO - Loaded expectations for key &amp;#x27;missing_price&amp;#x27;\n2025-04-19 15:40:51,519 - INFO - Actual success count: 0\n2025-04-19 15:40:51,519 - INFO - Actual error rows count: 0\n2025-04-19 15:40:51,519 - INFO - Computed total rows (successes + errors): 0\n2025-04-19 15:40:51,519 - INFO - Checking response status: expected &amp;#x27;error&amp;#x27;, got &amp;#x27;error&amp;#x27;\n2025-04-19 15:40:51,519 - INFO - Checking success count: expected 2, got 0\n2025-04-19 15:40:51,519 - INFO - Checking error count: expected 1, got 0\n2025-04-19 15:40:51,519 - INFO - Checking total records: expected 3, got 0\n2025-04-19 15:40:51,519 - INFO - Expected errors: [&amp;#x27;Missing price in row 1&amp;#x27;]\n2025-04-19 15:40:51,519 - INFO - Actual errors: [&amp;#x27;Unexpected error while parsing result: Timeout 10000ms exceeded.&amp;#x27;]\n2025-04-19 15:40:51,519 - WARNING - Missing expected errors: [&amp;#x27;Missing price in row 1&amp;#x27;]\n2025-04-19 15:40:51,519 - WARNING - Unexpected errors found: [&amp;#x27;Unexpected error while parsing result: Timeout 10000ms exceeded.&amp;#x27;]\n2025-04-19 15:40:51,519 - ERROR - Test failed with the following issues:\nExpected 2 successes, got 0\nExpected 1 errors, got 0\nExpected total 3, got 0\nMissing expected errors: [&amp;#x27;Missing price in row 1&amp;#x27;]\nUnexpected errors found: [&amp;#x27;Unexpected error while parsing result: Timeout 10000ms exceeded.&amp;#x27;]\n\n------------------------------ Captured log call -------------------------------\nINFO     csv_upload_tester:csv_upload_tester.py:19 Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/missing_price.csv, expected_status: error\nINFO     csv_upload_tester:csv_upload_tester.py:47 Navigated to http://localhost:8000\nINFO     csv_upload_tester:csv_upload_tester.py:55 Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/missing_price.csv\nINFO     csv_upload_tester:csv_upload_tester.py:58 Submitted the form\nERROR    UploadPage:UploadPage.py:55 Exception while getting results: Timeout 10000ms exceeded.\nINFO     csv_upload_tester:csv_upload_tester.py:71 Loading expected results from JSON file\nINFO     csv_upload_tester:csv_upload_tester.py:75 Loaded expectations for key &amp;#x27;missing_price&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:95 Actual success count: 0\nINFO     csv_upload_tester:csv_upload_tester.py:115 Actual error rows count: 0\nINFO     csv_upload_tester:csv_upload_tester.py:118 Computed total rows (successes + errors): 0\nINFO     csv_upload_tester:csv_upload_tester.py:121 Checking response status: expected &amp;#x27;error&amp;#x27;, got &amp;#x27;error&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:125 Checking success count: expected 2, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:129 Checking error count: expected 1, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:133 Checking total records: expected 3, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:137 Expected errors: [&amp;#x27;Missing price in row 1&amp;#x27;]\nINFO     csv_upload_tester:csv_upload_tester.py:138 Actual errors: [&amp;#x27;Unexpected error while parsing result: Timeout 10000ms exceeded.&amp;#x27;]\nWARNING  csv_upload_tester:csv_upload_tester.py:145 Missing expected errors: [&amp;#x27;Missing price in row 1&amp;#x27;]\nWARNING  csv_upload_tester:csv_upload_tester.py:149 Unexpected errors found: [&amp;#x27;Unexpected error while parsing result: Timeout 10000ms exceeded.&amp;#x27;]\nERROR    csv_upload_tester:csv_upload_tester.py:156 Test failed with the following issues:\nExpected 2 successes, got 0\nExpected 1 errors, got 0\nExpected total 3, got 0\nMissing expected errors: [&amp;#x27;Missing price in row 1&amp;#x27;]\nUnexpected errors found: [&amp;#x27;Unexpected error while parsing result: Timeout 10000ms exceeded.&amp;#x27;]\n\n&#34;}], &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/empty_file.csv-empty_file-error]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/empty_file.csv-empty_file-error]&#34;, &#34;duration&#34;: &#34;433 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/empty_file.csv-empty_file-error]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;433 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-04-19 15:40:51,885 - INFO - Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/empty_file.csv, expected_status: error\n2025-04-19 15:40:51,896 - INFO - Navigated to http://localhost:8000\n2025-04-19 15:40:51,915 - INFO - Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/empty_file.csv\n2025-04-19 15:40:51,968 - INFO - Submitted the form\n2025-04-19 15:40:51,983 - INFO - Loading expected results from JSON file\n2025-04-19 15:40:51,984 - INFO - Loaded expectations for key &amp;#x27;empty_file&amp;#x27;\n2025-04-19 15:40:51,984 - INFO - Actual success count: 0\n2025-04-19 15:40:51,984 - INFO - No &amp;#x27;errors&amp;#x27; field found, falling back to &amp;#x27;message&amp;#x27; field\n2025-04-19 15:40:51,984 - INFO - Actual error rows count: 0\n2025-04-19 15:40:51,984 - INFO - Computed total rows (successes + errors): 0\n2025-04-19 15:40:51,984 - INFO - Checking response status: expected &amp;#x27;error&amp;#x27;, got &amp;#x27;error&amp;#x27;\n2025-04-19 15:40:51,984 - INFO - Checking success count: expected 0, got 0\n2025-04-19 15:40:51,984 - INFO - Checking error count: expected 0, got 0\n2025-04-19 15:40:51,984 - INFO - Checking total records: expected 0, got 0\n2025-04-19 15:40:51,984 - INFO - Expected errors: [&amp;#x27;No columns to parse from file&amp;#x27;]\n2025-04-19 15:40:51,984 - INFO - Actual errors: [&amp;#x27;No columns to parse from file&amp;#x27;]\n2025-04-19 15:40:51,984 - INFO - Test passed successfully.\n\n------------------------------ Captured log call -------------------------------\nINFO     csv_upload_tester:csv_upload_tester.py:19 Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/empty_file.csv, expected_status: error\nINFO     csv_upload_tester:csv_upload_tester.py:47 Navigated to http://localhost:8000\nINFO     csv_upload_tester:csv_upload_tester.py:55 Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/empty_file.csv\nINFO     csv_upload_tester:csv_upload_tester.py:58 Submitted the form\nINFO     csv_upload_tester:csv_upload_tester.py:71 Loading expected results from JSON file\nINFO     csv_upload_tester:csv_upload_tester.py:75 Loaded expectations for key &amp;#x27;empty_file&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:95 Actual success count: 0\nINFO     csv_upload_tester:csv_upload_tester.py:106 No &amp;#x27;errors&amp;#x27; field found, falling back to &amp;#x27;message&amp;#x27; field\nINFO     csv_upload_tester:csv_upload_tester.py:115 Actual error rows count: 0\nINFO     csv_upload_tester:csv_upload_tester.py:118 Computed total rows (successes + errors): 0\nINFO     csv_upload_tester:csv_upload_tester.py:121 Checking response status: expected &amp;#x27;error&amp;#x27;, got &amp;#x27;error&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:125 Checking success count: expected 0, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:129 Checking error count: expected 0, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:133 Checking total records: expected 0, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:137 Expected errors: [&amp;#x27;No columns to parse from file&amp;#x27;]\nINFO     csv_upload_tester:csv_upload_tester.py:138 Actual errors: [&amp;#x27;No columns to parse from file&amp;#x27;]\nINFO     csv_upload_tester:csv_upload_tester.py:159 Test passed successfully.\n\n&#34;}], &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/header_only.csv-header_only-success]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/header_only.csv-header_only-success]&#34;, &#34;duration&#34;: &#34;400 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/header_only.csv-header_only-success]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;400 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-04-19 15:40:52,275 - INFO - Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/header_only.csv, expected_status: success\n2025-04-19 15:40:52,284 - INFO - Navigated to http://localhost:8000\n2025-04-19 15:40:52,303 - INFO - Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/header_only.csv\n2025-04-19 15:40:52,351 - INFO - Submitted the form\n2025-04-19 15:40:52,384 - INFO - Loading expected results from JSON file\n2025-04-19 15:40:52,384 - INFO - Loaded expectations for key &amp;#x27;header_only&amp;#x27;\n2025-04-19 15:40:52,384 - INFO - Actual success count: 0\n2025-04-19 15:40:52,384 - INFO - Actual error rows count: 0\n2025-04-19 15:40:52,384 - INFO - Computed total rows (successes + errors): 0\n2025-04-19 15:40:52,384 - INFO - Checking response status: expected &amp;#x27;success&amp;#x27;, got &amp;#x27;success&amp;#x27;\n2025-04-19 15:40:52,384 - INFO - Checking success count: expected 0, got 0\n2025-04-19 15:40:52,384 - INFO - Checking error count: expected 0, got 0\n2025-04-19 15:40:52,384 - INFO - Checking total records: expected 0, got 0\n2025-04-19 15:40:52,384 - INFO - Expected errors: []\n2025-04-19 15:40:52,384 - INFO - Actual errors: []\n2025-04-19 15:40:52,384 - INFO - Test passed successfully.\n\n------------------------------ Captured log call -------------------------------\nINFO     csv_upload_tester:csv_upload_tester.py:19 Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/header_only.csv, expected_status: success\nINFO     csv_upload_tester:csv_upload_tester.py:47 Navigated to http://localhost:8000\nINFO     csv_upload_tester:csv_upload_tester.py:55 Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/header_only.csv\nINFO     csv_upload_tester:csv_upload_tester.py:58 Submitted the form\nINFO     csv_upload_tester:csv_upload_tester.py:71 Loading expected results from JSON file\nINFO     csv_upload_tester:csv_upload_tester.py:75 Loaded expectations for key &amp;#x27;header_only&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:95 Actual success count: 0\nINFO     csv_upload_tester:csv_upload_tester.py:115 Actual error rows count: 0\nINFO     csv_upload_tester:csv_upload_tester.py:118 Computed total rows (successes + errors): 0\nINFO     csv_upload_tester:csv_upload_tester.py:121 Checking response status: expected &amp;#x27;success&amp;#x27;, got &amp;#x27;success&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:125 Checking success count: expected 0, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:129 Checking error count: expected 0, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:133 Checking total records: expected 0, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:137 Expected errors: []\nINFO     csv_upload_tester:csv_upload_tester.py:138 Actual errors: []\nINFO     csv_upload_tester:csv_upload_tester.py:159 Test passed successfully.\n\n&#34;}], &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/non_numeric_price.csv-non_numeric_price-error]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/non_numeric_price.csv-non_numeric_price-error]&#34;, &#34;duration&#34;: &#34;399 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/non_numeric_price.csv-non_numeric_price-error]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;399 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;csv_file = &amp;#x27;/Users/omerbublil/Desktop/shopic_assigment_1/data/non_numeric_price.csv&amp;#x27;\nexpected_key = &amp;#x27;non_numeric_price&amp;#x27;, expected_status = &amp;#x27;error&amp;#x27;\npage = &amp;lt;Page url=&amp;#x27;http://localhost:8000/&amp;#x27;&amp;gt;\n\n    @pytest.mark.parametrize(&amp;quot;csv_file, expected_key, expected_status&amp;quot;, test_cases)\n    def test_csv_upload(csv_file, expected_key, expected_status, page):\n        &amp;quot;&amp;quot;&amp;quot;\n        Executes the CSV upload test for a given file, comparing actual results from the site\n        against the expected results defined in expected_results.json.\n        &amp;quot;&amp;quot;&amp;quot;\n        tester = csv_upload_tester(csv_file, expected_key, expected_status)\n&amp;gt;       tester.run(page)\n\ntests/test_csv_uploads.py:33: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;csv_upload_tester.csv_upload_tester object at 0x10593d9d0&amp;gt;\npage = &amp;lt;Page url=&amp;#x27;http://localhost:8000/&amp;#x27;&amp;gt;\n\n    def run(self, page):\n        &amp;quot;&amp;quot;&amp;quot;\n        Main test logic: uploads the file, collects the result from the site,\n        compares with expected results, and raises assertion if mismatch is found.\n        &amp;quot;&amp;quot;&amp;quot;\n        upload_page = UploadPage(page)\n        upload_page.navigate(self.base_url)\n        logger.info(f&amp;quot;Navigated to {self.base_url}&amp;quot;)\n    \n        # Before attempting to upload the file\n        if not os.path.exists(self.csv_path):\n            logger.error(f&amp;quot;CSV file not found: {self.csv_path}. Aborting upload.&amp;quot;)\n            raise FileNotFoundError(f&amp;quot;CSV file not found: {self.csv_path}&amp;quot;)\n    \n        upload_page.upload_file(self.csv_path)\n        logger.info(f&amp;quot;Uploaded file: {self.csv_path}&amp;quot;)\n    \n        upload_page.submit()\n        logger.info(&amp;quot;Submitted the form&amp;quot;)\n    \n        # Get the base path of the project (root folder)\n        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\n        EXPECTED_RESULTS_PATH = os.path.join(BASE_DIR, &amp;quot;data&amp;quot;, &amp;quot;expected_results.json&amp;quot;)\n    \n        try:\n            result_json = upload_page.get_results()\n        except Exception as e:\n            logging.error(f&amp;quot;Exception while getting results: {e}&amp;quot;)\n            result_json = {&amp;quot;status&amp;quot;: &amp;quot;error&amp;quot;, &amp;quot;message&amp;quot;: f&amp;quot;Unexpected error while parsing result: {e}&amp;quot;}\n    \n        try:\n            logger.info(&amp;quot;Loading expected results from JSON file&amp;quot;)\n            with open(EXPECTED_RESULTS_PATH) as f:\n                expected_results = json.load(f)\n            expected = expected_results[self.expected_key]\n            logger.info(f&amp;quot;Loaded expectations for key &amp;#x27;{self.expected_key}&amp;#x27;&amp;quot;)\n        except FileNotFoundError:\n            logger.error(&amp;quot;Expected results file not found.&amp;quot;)\n            raise\n        except KeyError:\n            logger.error(f&amp;quot;Key &amp;#x27;{self.expected_key}&amp;#x27; not found in expected results file.&amp;quot;)\n            raise\n        except json.JSONDecodeError as e:\n            logger.error(f&amp;quot;Failed to decode JSON file: {e}&amp;quot;)\n            raise\n    \n    \n        # Extract expected values\n        total_expected = expected[&amp;quot;total&amp;quot;]\n        success_expected = expected[&amp;quot;success_count&amp;quot;]\n        error_expected = expected[&amp;quot;error_count&amp;quot;]\n        expected_errors = expected.get(&amp;quot;expected_errors&amp;quot;, [])\n    \n        # Parse actual results\n        actual_success_count = len(result_json.get(&amp;quot;data&amp;quot;, [])) if &amp;quot;data&amp;quot; in result_json else 0\n        logger.info(f&amp;quot;Actual success count: {actual_success_count}&amp;quot;)\n    \n        failures = []\n    \n        # Extract errors from response\n        actual_errors = result_json.get(&amp;quot;errors&amp;quot;)\n        if not actual_errors or not isinstance(actual_errors, list):\n            actual_errors = []\n    \n        # If no structured errors, fall back to error message string\n        if not actual_errors and &amp;quot;message&amp;quot; in result_json:\n            logger.info(&amp;quot;No &amp;#x27;errors&amp;#x27; field found, falling back to &amp;#x27;message&amp;#x27; field&amp;quot;)\n            actual_errors = [result_json[&amp;quot;message&amp;quot;]]\n    \n        # Ensure errors exist when error is expected\n        if self.expected_status == &amp;quot;error&amp;quot; and not actual_errors:\n            logger.warning(&amp;quot;Expected error status but no errors or message were returned in response&amp;quot;)\n            failures.append(&amp;quot;Expected error status but no errors or message were returned in response&amp;quot;)\n    \n        actual_error_rows_count = len(self.extract_error_rows(actual_errors))\n        logger.info(f&amp;quot;Actual error rows count: {actual_error_rows_count}&amp;quot;)\n    \n        actual_total = actual_success_count + actual_error_rows_count\n        logger.info(f&amp;quot;Computed total rows (successes + errors): {actual_total}&amp;quot;)\n    \n        # Compare actual results to expected\n        logger.info(f&amp;quot;Checking response status: expected &amp;#x27;{self.expected_status}&amp;#x27;, got &amp;#x27;{result_json[&amp;#x27;status&amp;#x27;]}&amp;#x27;&amp;quot;)\n        if result_json[&amp;quot;status&amp;quot;] != self.expected_status:\n            failures.append(f&amp;quot;Expected status &amp;#x27;{self.expected_status}&amp;#x27;, got &amp;#x27;{result_json[&amp;#x27;status&amp;#x27;]}&amp;#x27;&amp;quot;)\n    \n        logger.info(f&amp;quot;Checking success count: expected {success_expected}, got {actual_success_count}&amp;quot;)\n        if actual_success_count != success_expected:\n            failures.append(f&amp;quot;Expected {success_expected} successes, got {actual_success_count}&amp;quot;)\n    \n        logger.info(f&amp;quot;Checking error count: expected {error_expected}, got {actual_error_rows_count}&amp;quot;)\n        if actual_error_rows_count != error_expected:\n            failures.append(f&amp;quot;Expected {error_expected} errors, got {actual_error_rows_count}&amp;quot;)\n    \n        logger.info(f&amp;quot;Checking total records: expected {total_expected}, got {actual_total}&amp;quot;)\n        if actual_total != total_expected:\n            failures.append(f&amp;quot;Expected total {total_expected}, got {actual_total}&amp;quot;)\n    \n        logger.info(f&amp;quot;Expected errors: {expected_errors}&amp;quot;)\n        logger.info(f&amp;quot;Actual errors: {actual_errors}&amp;quot;)\n    \n        # Detect missing or extra errors\n        missing = [e for e in expected_errors if e not in actual_errors]\n        unexpected = [e for e in actual_errors if e not in expected_errors]\n    \n        if missing:\n            logger.warning(f&amp;quot;Missing expected errors: {missing}&amp;quot;)\n            failures.append(f&amp;quot;Missing expected errors: {missing}&amp;quot;)\n    \n        if unexpected:\n            logger.warning(f&amp;quot;Unexpected errors found: {unexpected}&amp;quot;)\n            failures.append(f&amp;quot;Unexpected errors found: {unexpected}&amp;quot;)\n    \n        # Final assertion if any failure detected\n        if failures:\n            full_message = &amp;quot;\\n&amp;quot;.join(failures)\n            separator = &amp;quot;\\n&amp;quot; + &amp;quot;=&amp;quot; * 60 + &amp;quot;\\n&amp;quot;\n            logger.error(f&amp;quot;Test failed with the following issues:\\n{full_message}&amp;quot;)\n&amp;gt;           assert False, f&amp;quot;{separator}Test failed with the following issues:\\n{full_message}{separator}&amp;quot;\nE           AssertionError: \nE           ============================================================\nE           Test failed with the following issues:\nE           Expected 1 errors, got 3\nE           Expected total 1, got 3\nE           Unexpected errors found: [&amp;#x27;Invalid price in row 1&amp;#x27;, &amp;#x27;Invalid price in row 2&amp;#x27;]\nE           ============================================================\n\ntests/csv_upload_tester.py:157: AssertionError\n\n----------------------------- Captured stderr call -----------------------------\n2025-04-19 15:40:52,684 - INFO - Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/non_numeric_price.csv, expected_status: error\n2025-04-19 15:40:52,693 - INFO - Navigated to http://localhost:8000\n2025-04-19 15:40:52,712 - INFO - Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/non_numeric_price.csv\n2025-04-19 15:40:52,751 - INFO - Submitted the form\n2025-04-19 15:40:52,784 - INFO - Loading expected results from JSON file\n2025-04-19 15:40:52,784 - INFO - Loaded expectations for key &amp;#x27;non_numeric_price&amp;#x27;\n2025-04-19 15:40:52,784 - INFO - Actual success count: 0\n2025-04-19 15:40:52,784 - INFO - Actual error rows count: 3\n2025-04-19 15:40:52,784 - INFO - Computed total rows (successes + errors): 3\n2025-04-19 15:40:52,784 - INFO - Checking response status: expected &amp;#x27;error&amp;#x27;, got &amp;#x27;error&amp;#x27;\n2025-04-19 15:40:52,784 - INFO - Checking success count: expected 0, got 0\n2025-04-19 15:40:52,784 - INFO - Checking error count: expected 1, got 3\n2025-04-19 15:40:52,784 - INFO - Checking total records: expected 1, got 3\n2025-04-19 15:40:52,784 - INFO - Expected errors: [&amp;#x27;Invalid price in row 0&amp;#x27;]\n2025-04-19 15:40:52,784 - INFO - Actual errors: [&amp;#x27;Invalid price in row 0&amp;#x27;, &amp;#x27;Invalid price in row 1&amp;#x27;, &amp;#x27;Invalid price in row 2&amp;#x27;]\n2025-04-19 15:40:52,784 - WARNING - Unexpected errors found: [&amp;#x27;Invalid price in row 1&amp;#x27;, &amp;#x27;Invalid price in row 2&amp;#x27;]\n2025-04-19 15:40:52,784 - ERROR - Test failed with the following issues:\nExpected 1 errors, got 3\nExpected total 1, got 3\nUnexpected errors found: [&amp;#x27;Invalid price in row 1&amp;#x27;, &amp;#x27;Invalid price in row 2&amp;#x27;]\n\n------------------------------ Captured log call -------------------------------\nINFO     csv_upload_tester:csv_upload_tester.py:19 Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/non_numeric_price.csv, expected_status: error\nINFO     csv_upload_tester:csv_upload_tester.py:47 Navigated to http://localhost:8000\nINFO     csv_upload_tester:csv_upload_tester.py:55 Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/non_numeric_price.csv\nINFO     csv_upload_tester:csv_upload_tester.py:58 Submitted the form\nINFO     csv_upload_tester:csv_upload_tester.py:71 Loading expected results from JSON file\nINFO     csv_upload_tester:csv_upload_tester.py:75 Loaded expectations for key &amp;#x27;non_numeric_price&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:95 Actual success count: 0\nINFO     csv_upload_tester:csv_upload_tester.py:115 Actual error rows count: 3\nINFO     csv_upload_tester:csv_upload_tester.py:118 Computed total rows (successes + errors): 3\nINFO     csv_upload_tester:csv_upload_tester.py:121 Checking response status: expected &amp;#x27;error&amp;#x27;, got &amp;#x27;error&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:125 Checking success count: expected 0, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:129 Checking error count: expected 1, got 3\nINFO     csv_upload_tester:csv_upload_tester.py:133 Checking total records: expected 1, got 3\nINFO     csv_upload_tester:csv_upload_tester.py:137 Expected errors: [&amp;#x27;Invalid price in row 0&amp;#x27;]\nINFO     csv_upload_tester:csv_upload_tester.py:138 Actual errors: [&amp;#x27;Invalid price in row 0&amp;#x27;, &amp;#x27;Invalid price in row 1&amp;#x27;, &amp;#x27;Invalid price in row 2&amp;#x27;]\nWARNING  csv_upload_tester:csv_upload_tester.py:149 Unexpected errors found: [&amp;#x27;Invalid price in row 1&amp;#x27;, &amp;#x27;Invalid price in row 2&amp;#x27;]\nERROR    csv_upload_tester:csv_upload_tester.py:156 Test failed with the following issues:\nExpected 1 errors, got 3\nExpected total 1, got 3\nUnexpected errors found: [&amp;#x27;Invalid price in row 1&amp;#x27;, &amp;#x27;Invalid price in row 2&amp;#x27;]\n\n&#34;}], &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/negative_price.csv-negative_price-error]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/negative_price.csv-negative_price-error]&#34;, &#34;duration&#34;: &#34;377 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/negative_price.csv-negative_price-error]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;377 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-04-19 15:40:53,080 - INFO - Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/negative_price.csv, expected_status: error\n2025-04-19 15:40:53,094 - INFO - Navigated to http://localhost:8000\n2025-04-19 15:40:53,112 - INFO - Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/negative_price.csv\n2025-04-19 15:40:53,152 - INFO - Submitted the form\n2025-04-19 15:40:53,166 - INFO - Loading expected results from JSON file\n2025-04-19 15:40:53,167 - INFO - Loaded expectations for key &amp;#x27;negative_price&amp;#x27;\n2025-04-19 15:40:53,167 - INFO - Actual success count: 0\n2025-04-19 15:40:53,167 - INFO - Actual error rows count: 1\n2025-04-19 15:40:53,167 - INFO - Computed total rows (successes + errors): 1\n2025-04-19 15:40:53,167 - INFO - Checking response status: expected &amp;#x27;error&amp;#x27;, got &amp;#x27;error&amp;#x27;\n2025-04-19 15:40:53,167 - INFO - Checking success count: expected 0, got 0\n2025-04-19 15:40:53,167 - INFO - Checking error count: expected 1, got 1\n2025-04-19 15:40:53,167 - INFO - Checking total records: expected 1, got 1\n2025-04-19 15:40:53,167 - INFO - Expected errors: [&amp;#x27;Invalid price in row 1&amp;#x27;]\n2025-04-19 15:40:53,167 - INFO - Actual errors: [&amp;#x27;Invalid price in row 1&amp;#x27;]\n2025-04-19 15:40:53,167 - INFO - Test passed successfully.\n\n------------------------------ Captured log call -------------------------------\nINFO     csv_upload_tester:csv_upload_tester.py:19 Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/negative_price.csv, expected_status: error\nINFO     csv_upload_tester:csv_upload_tester.py:47 Navigated to http://localhost:8000\nINFO     csv_upload_tester:csv_upload_tester.py:55 Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/negative_price.csv\nINFO     csv_upload_tester:csv_upload_tester.py:58 Submitted the form\nINFO     csv_upload_tester:csv_upload_tester.py:71 Loading expected results from JSON file\nINFO     csv_upload_tester:csv_upload_tester.py:75 Loaded expectations for key &amp;#x27;negative_price&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:95 Actual success count: 0\nINFO     csv_upload_tester:csv_upload_tester.py:115 Actual error rows count: 1\nINFO     csv_upload_tester:csv_upload_tester.py:118 Computed total rows (successes + errors): 1\nINFO     csv_upload_tester:csv_upload_tester.py:121 Checking response status: expected &amp;#x27;error&amp;#x27;, got &amp;#x27;error&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:125 Checking success count: expected 0, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:129 Checking error count: expected 1, got 1\nINFO     csv_upload_tester:csv_upload_tester.py:133 Checking total records: expected 1, got 1\nINFO     csv_upload_tester:csv_upload_tester.py:137 Expected errors: [&amp;#x27;Invalid price in row 1&amp;#x27;]\nINFO     csv_upload_tester:csv_upload_tester.py:138 Actual errors: [&amp;#x27;Invalid price in row 1&amp;#x27;]\nINFO     csv_upload_tester:csv_upload_tester.py:159 Test passed successfully.\n\n&#34;}], &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/missing_headers.csv-missing_headers-error]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/missing_headers.csv-missing_headers-error]&#34;, &#34;duration&#34;: &#34;379 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/missing_headers.csv-missing_headers-error]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;379 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stderr call -----------------------------\n2025-04-19 15:40:53,465 - INFO - Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/missing_headers.csv, expected_status: error\n2025-04-19 15:40:53,474 - INFO - Navigated to http://localhost:8000\n2025-04-19 15:40:53,491 - INFO - Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/missing_headers.csv\n2025-04-19 15:40:53,535 - INFO - Submitted the form\n2025-04-19 15:40:53,548 - INFO - Loading expected results from JSON file\n2025-04-19 15:40:53,548 - INFO - Loaded expectations for key &amp;#x27;missing_headers&amp;#x27;\n2025-04-19 15:40:53,548 - INFO - Actual success count: 0\n2025-04-19 15:40:53,548 - INFO - No &amp;#x27;errors&amp;#x27; field found, falling back to &amp;#x27;message&amp;#x27; field\n2025-04-19 15:40:53,548 - INFO - Actual error rows count: 0\n2025-04-19 15:40:53,548 - INFO - Computed total rows (successes + errors): 0\n2025-04-19 15:40:53,548 - INFO - Checking response status: expected &amp;#x27;error&amp;#x27;, got &amp;#x27;error&amp;#x27;\n2025-04-19 15:40:53,548 - INFO - Checking success count: expected 0, got 0\n2025-04-19 15:40:53,548 - INFO - Checking error count: expected 0, got 0\n2025-04-19 15:40:53,548 - INFO - Checking total records: expected 0, got 0\n2025-04-19 15:40:53,548 - INFO - Expected errors: [&amp;quot;&amp;#x27;name&amp;#x27;&amp;quot;]\n2025-04-19 15:40:53,548 - INFO - Actual errors: [&amp;quot;&amp;#x27;name&amp;#x27;&amp;quot;]\n2025-04-19 15:40:53,548 - INFO - Test passed successfully.\n\n------------------------------ Captured log call -------------------------------\nINFO     csv_upload_tester:csv_upload_tester.py:19 Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/missing_headers.csv, expected_status: error\nINFO     csv_upload_tester:csv_upload_tester.py:47 Navigated to http://localhost:8000\nINFO     csv_upload_tester:csv_upload_tester.py:55 Uploaded file: /Users/omerbublil/Desktop/shopic_assigment_1/data/missing_headers.csv\nINFO     csv_upload_tester:csv_upload_tester.py:58 Submitted the form\nINFO     csv_upload_tester:csv_upload_tester.py:71 Loading expected results from JSON file\nINFO     csv_upload_tester:csv_upload_tester.py:75 Loaded expectations for key &amp;#x27;missing_headers&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:95 Actual success count: 0\nINFO     csv_upload_tester:csv_upload_tester.py:106 No &amp;#x27;errors&amp;#x27; field found, falling back to &amp;#x27;message&amp;#x27; field\nINFO     csv_upload_tester:csv_upload_tester.py:115 Actual error rows count: 0\nINFO     csv_upload_tester:csv_upload_tester.py:118 Computed total rows (successes + errors): 0\nINFO     csv_upload_tester:csv_upload_tester.py:121 Checking response status: expected &amp;#x27;error&amp;#x27;, got &amp;#x27;error&amp;#x27;\nINFO     csv_upload_tester:csv_upload_tester.py:125 Checking success count: expected 0, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:129 Checking error count: expected 0, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:133 Checking total records: expected 0, got 0\nINFO     csv_upload_tester:csv_upload_tester.py:137 Expected errors: [&amp;quot;&amp;#x27;name&amp;#x27;&amp;quot;]\nINFO     csv_upload_tester:csv_upload_tester.py:138 Actual errors: [&amp;quot;&amp;#x27;name&amp;#x27;&amp;quot;]\nINFO     csv_upload_tester:csv_upload_tester.py:159 Test passed successfully.\n\n&#34;}], &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/valid_productsss.csv-valid_products-success]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/valid_productsss.csv-valid_products-success]&#34;, &#34;duration&#34;: &#34;302 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_csv_uploads.py::test_csv_upload[/Users/omerbublil/Desktop/shopic_assigment_1/data/valid_productsss.csv-valid_products-success]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;302 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;csv_file = &amp;#x27;/Users/omerbublil/Desktop/shopic_assigment_1/data/valid_productsss.csv&amp;#x27;\nexpected_key = &amp;#x27;valid_products&amp;#x27;, expected_status = &amp;#x27;success&amp;#x27;\npage = &amp;lt;Page url=&amp;#x27;http://localhost:8000/&amp;#x27;&amp;gt;\n\n    @pytest.mark.parametrize(&amp;quot;csv_file, expected_key, expected_status&amp;quot;, test_cases)\n    def test_csv_upload(csv_file, expected_key, expected_status, page):\n        &amp;quot;&amp;quot;&amp;quot;\n        Executes the CSV upload test for a given file, comparing actual results from the site\n        against the expected results defined in expected_results.json.\n        &amp;quot;&amp;quot;&amp;quot;\n        tester = csv_upload_tester(csv_file, expected_key, expected_status)\n&amp;gt;       tester.run(page)\n\ntests/test_csv_uploads.py:33: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;csv_upload_tester.csv_upload_tester object at 0x10593d970&amp;gt;\npage = &amp;lt;Page url=&amp;#x27;http://localhost:8000/&amp;#x27;&amp;gt;\n\n    def run(self, page):\n        &amp;quot;&amp;quot;&amp;quot;\n        Main test logic: uploads the file, collects the result from the site,\n        compares with expected results, and raises assertion if mismatch is found.\n        &amp;quot;&amp;quot;&amp;quot;\n        upload_page = UploadPage(page)\n        upload_page.navigate(self.base_url)\n        logger.info(f&amp;quot;Navigated to {self.base_url}&amp;quot;)\n    \n        # Before attempting to upload the file\n        if not os.path.exists(self.csv_path):\n            logger.error(f&amp;quot;CSV file not found: {self.csv_path}. Aborting upload.&amp;quot;)\n&amp;gt;           raise FileNotFoundError(f&amp;quot;CSV file not found: {self.csv_path}&amp;quot;)\nE           FileNotFoundError: CSV file not found: /Users/omerbublil/Desktop/shopic_assigment_1/data/valid_productsss.csv\n\ntests/csv_upload_tester.py:52: FileNotFoundError\n\n----------------------------- Captured stderr call -----------------------------\n2025-04-19 15:40:53,837 - INFO - Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/valid_productsss.csv, expected_status: success\n2025-04-19 15:40:53,846 - INFO - Navigated to http://localhost:8000\n2025-04-19 15:40:53,846 - ERROR - CSV file not found: /Users/omerbublil/Desktop/shopic_assigment_1/data/valid_productsss.csv. Aborting upload.\n\n------------------------------ Captured log call -------------------------------\nINFO     csv_upload_tester:csv_upload_tester.py:19 Initialized tester with CSV: /Users/omerbublil/Desktop/shopic_assigment_1/data/valid_productsss.csv, expected_status: success\nINFO     csv_upload_tester:csv_upload_tester.py:47 Navigated to http://localhost:8000\nERROR    csv_upload_tester:csv_upload_tester.py:51 CSV file not found: /Users/omerbublil/Desktop/shopic_assigment_1/data/valid_productsss.csv. Aborting upload.\n\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
