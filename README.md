@@ -34,32 +34,7 @@ pytest tests/ > test_report.txt
 ## Project Structure
 
 
-shopic_assigment_1/
-│
-├── server/
-│   └── app.py                          # Flask server that handles CSV uploads
-│
-├── tests/
-│   ├── test_csv_uploads.py            # Automated test suite using Playwright and Pytest
-│   ├── csv_upload_tester.py           # Core logic for testing CSV upload functionality
-│   ├── UploadPage.py                  # Page Object Model for interacting with the upload page
-│   └── conftest.py                    # Pytest fixtures for Playwright browser setup
-│
-├── data/
-│   ├── valid_products.csv
-│   ├── invalid_products.csv
-│   ├── missing_price.csv
-│   ├── empty_file.csv
-│   ├── header_only.csv
-│   ├── non_numeric_price.csv
-│   ├── negative_price.csv
-│   ├── missing_headers.csv
-│   ├── empty_rows.csv
-│   └── expected_results.json          # Defines expected output for each test case
-│
-├── requirements.txt                   # Python dependencies for the project
-├── README.md                          # Project documentation (this file)
-└── Home Assignment                    # External file, not part of the project structure
+<pre lang="markdown"> ## Project Structure ``` shopic_assigment_1/ ├── server/ │ └── app.py # Flask server that handles CSV uploads ├── tests/ │ ├── test_csv_uploads.py # Automated test suite using Playwright and Pytest │ ├── csv_upload_tester.py # Core test logic and result validation │ ├── UploadPage.py # Page Object Model for interacting with the upload page │ └── conftest.py # Pytest fixtures for browser setup ├── data/ │ ├── valid_products.csv │ ├── invalid_products.csv │ ├── missing_price.csv │ ├── empty_file.csv │ ├── header_only.csv │ ├── non_numeric_price.csv │ ├── negative_price.csv │ ├── missing_headers.csv │ ├── empty_rows.csv │ └── expected_results.json # Expected output for each test case ├── report.html # HTML test execution report ├── requirements.txt # Python dependencies └── README.md # Project documentation ``` </pre>
 
 
 ## Assumptions and Limitations
