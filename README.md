@@ -3,37 +3,80 @@
 ## Setup Instructions
 
 1. Clone the repository and navigate to the project directory:
-   git clone <shopic_home‫_‬assigment>
+   ```bash
+   git clone <shopic_home_assigment>
    cd shopic_assigment_1
-
+   ```
 
 2. Create and activate a Python virtual environment:
+   ```bash
    python3 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
 3. Install all required dependencies:
+   ```bash
    pip install -r requirements.txt
+   ```
 
 4. Start the local server before running any tests:
-   python server/app.py   
+   ```bash
+   python server/app.py
+   ```
 
-   Note: The server must be running locally at `http://localhost:8000` before test execution begins.
+   **Note:** The server must be running locally at `http://localhost:8000` before test execution begins.
+
+---
 
 ## Test Execution Instructions
 
-Tests are written using `pytest` and `Playwright`. To execute the tests:
+Tests are written using `pytest` and `Playwright`.
+
+To execute the tests:
+```bash
 pytest tests
+```
 
 To generate an HTML test report:
+```bash
 pytest tests/ --html=report.html
+```
 
-Alternatively, to create a plain text report:
+To create a plain text report:
+```bash
 pytest tests/ > test_report.txt
+```
 
+---
 
-<pre lang="markdown"> ## Project Structure ``` shopic_assigment_1/ ├── server/ │ └── app.py # Flask server that handles CSV uploads ├── tests/ │ ├── test_csv_uploads.py # Automated test suite using Playwright and Pytest │ ├── csv_upload_tester.py # Core test logic and result validation │ ├── UploadPage.py # Page Object Model for interacting with the upload page │ └── conftest.py # Pytest fixtures for browser setup ├── data/ │ ├── valid_products.csv │ ├── invalid_products.csv │ ├── missing_price.csv │ ├── empty_file.csv │ ├── header_only.csv │ ├── non_numeric_price.csv │ ├── negative_price.csv │ ├── missing_headers.csv │ ├── empty_rows.csv │ └── expected_results.json # Expected output for each test case ├── report.html # HTML test execution report ├── requirements.txt # Python dependencies └── README.md # Project documentation ``` </pre>
+## Project Structure
 
+```
+shopic_assigment_1/
+├── server/
+│   └── app.py                     # Flask server that handles CSV uploads
+├── tests/
+│   ├── test_csv_uploads.py        # Automated test suite using Playwright and Pytest
+│   ├── csv_upload_tester.py       # Core test logic and result validation
+│   ├── UploadPage.py              # Page Object Model for interacting with the upload page
+│   └── conftest.py                # Pytest fixtures for browser setup
+├── data/
+│   ├── valid_products.csv
+│   ├── invalid_products.csv
+│   ├── missing_price.csv
+│   ├── empty_file.csv
+│   ├── header_only.csv
+│   ├── non_numeric_price.csv
+│   ├── negative_price.csv
+│   ├── missing_headers.csv
+│   ├── empty_rows.csv
+│   └── expected_results.json      # Expected output for each test case
+├── report.html                    # HTML test execution report
+├── requirements.txt               # Python dependencies
+└── README.md                      # Project documentation
+```
 
+---
 
 ## Assumptions and Limitations
 
@@ -45,6 +88,8 @@ pytest tests/ > test_report.txt
 - Files containing only headers or empty content are treated as edge cases and handled explicitly.
 - If the server fails to respond within 10 seconds, the test will fail due to a timeout.
 - No CI/CD pipeline is configured. All tests are executed manually.
+
+---
 
 ## Test Report
 
